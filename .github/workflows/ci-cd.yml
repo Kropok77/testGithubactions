@@ -31,3 +31,5 @@ jobs:
     - name: Deploy to Staging (optional)
       run: |
         echo "Deploying to staging..."  # Это пример шага для деплоя
+      env:
+        API_KEY: ${{ secrets.API_KEY }}
